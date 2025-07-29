@@ -1,0 +1,47 @@
+.techUsed {
+  width: 100%;
+  background-color: #f8f8f8;
+
+  padding-top: 222px;
+  padding-left: 4%;
+  padding-right: 6%;
+}
+.techUsedTitle {
+  background-color: pink;
+
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  border: 0px;
+  border-bottom: 1px solid #222222;
+
+  border-style: dotted;
+
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+.techUsedButtons {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  gap: 1%;
+  flex-wrap: wrap;
+
+  padding-top: 40px;
+}
+.techUsedButton {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: normal;
+  padding: 10px 20px;
+  border-radius: 30px;
+
+  color: #222222;
+
+  border: 0.1px solid #222222;
+  margin-bottom: 10px;
+}

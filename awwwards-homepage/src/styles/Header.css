@@ -1,0 +1,111 @@
+.header {
+  width: 100%;
+  background-color: #e9e9e9;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 15px 4%;
+
+  gap: 10px;
+}
+.headerTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; /* or 800 for bolder */
+  font-size: 25px;
+  letter-spacing: -1px;
+
+  background-color: red;
+
+  padding-right: 3%;
+}
+.headerButtons1,
+.headerButtons2 {
+  display: flex;
+  flex-direction: row;
+
+  background-color: rebeccapurple;
+
+  gap: 20px;
+}
+.headerButton,
+.headerProfileButton,
+.headerProButton,
+.headerSubmitButton {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 5px;
+
+  border: 0px;
+  background-color: aquamarine;
+
+  padding: 5px;
+
+  font-size: 13px;
+
+  font-weight: 50;
+}
+.headerProfileButton {
+  border-radius: 100px;
+  background-color: aquamarine;
+  padding: 0px;
+}
+.headerButton2 {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: black;
+}
+.headerIcon {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+
+  border-radius: 50px;
+}
+.newTag {
+  background-color: black;
+  color: white;
+
+  border-radius: 5px;
+  padding: 5px;
+
+  font-size: 10px;
+}
+.headerInput {
+  width: 100%;
+  max-width: 630px;
+  padding: 10px;
+  border-radius: 10px;
+
+  border: 0px;
+  background-color: #dedede;
+}
+.headerProfileicon {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+
+  border-radius: 50px;
+}
+.headerProButton,
+.headerSubmitButton {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 15px;
+
+  white-space: nowrap;
+}
+.headerSubmitButton {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}

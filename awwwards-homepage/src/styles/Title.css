@@ -1,0 +1,112 @@
+.title {
+  width: 100%;
+  background-color: #e9e9e9;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Inter Tight";
+
+  color: #222222;
+
+  padding-top: 46px;
+}
+.siteScore,
+.siteName {
+  width: 100%;
+  background-color: lightgreen;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+  font-size: 14px;
+
+  font-weight: 500;
+
+  /* padding-top: 50px; */
+}
+.siteScore {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+.siteName {
+  font-size: clamp(24px, 10vw, 150px); /* This is responsive */
+  background-color: aqua;
+
+  padding: 0px;
+  width: 100%;
+  aspect-ratio: 10 / 1;
+
+  /* Remove this ↓ */
+  /* font-size: 135.386px; */
+
+  line-height: 1; /* Or use same clamp() if needed */
+  font-weight: 600;
+  letter-spacing: normal;
+}
+
+.siteCreaterName {
+  width: 100%;
+  background-color: orange;
+}
+.createrProfileIcon {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+
+  border-radius: 100px;
+}
+.CreaterName {
+}
+.siteCreaterName {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+  font-size: 21.8366px;
+  line-height: 21.8366px;
+  font-weight: 600;
+
+  letter-spacing: normal;
+
+  text-decoration: underline;
+  text-underline-offset: 7px;
+
+  gap: 10px;
+
+  font-weight: 600;
+  font-size: 20px;
+
+  padding-bottom: 77px;
+}
+.sitePhotoOuterContainer {
+  width: 100%;
+  padding: 0% 3.5%;
+
+  background-color: goldenrod;
+}
+.sitePhotoContainer {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+
+  background-color: #222222;
+  padding: 62px 5%;
+
+  border-radius: 14px;
+}
+.sitePhoto {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+}
