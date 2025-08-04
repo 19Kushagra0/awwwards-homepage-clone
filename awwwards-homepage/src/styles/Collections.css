@@ -1,0 +1,134 @@
+.collections {
+  width: 100%;
+
+  padding-top: clamp(90px, 15vw, 200px);
+  padding-left: 4%;
+  padding-right: 4%;
+
+  /* background-color: blue; */
+}
+.collectionsTitle {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+.collectionsDescription {
+  font-size: 43.5px;
+  line-height: 52px;
+  font-weight: 600;
+  letter-spacing: normal;
+
+  padding-top: 14px;
+}
+.collections-container {
+  width: 100%;
+
+  padding-top: 77px;
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+.collections-box {
+  min-width: 230px;
+  /* height: 380px; */
+  /* background-color: purple; */
+
+  border-radius: 10px;
+
+  flex: 1;
+
+  aspect-ratio: 1.1/1;
+}
+.collections-image {
+  width: 100%;
+  height: 85%;
+  background-color: paleturquoise;
+
+  border-radius: 10px;
+}
+.collections-text {
+  padding-top: 20px;
+  width: 100%;
+  height: 15%;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  gap: clamp(1px, 2vw, 10px);
+
+  font-size: clamp(1px, 2vw, 20px);
+  line-height: 5px;
+  font-weight: 600;
+  letter-spacing: normal;
+
+  flex-wrap: wrap;
+}
+.collections-smallText {
+  font-size: clamp(1px, 2vw, 10.5px);
+
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+.imagesContainers {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+
+  width: fit-content;
+}
+.imagesContainer1,
+.imagesContainer2,
+.imagesContainer3 {
+  background-color: #f8f8f8;
+
+  border-radius: 100px;
+
+  display: flex;
+  flex-direction: row;
+  padding-left: 1px;
+}
+.imagesContainer1 {
+}
+.imagesContainer2 {
+  position: absolute;
+  left: 20px;
+}
+.imagesContainer3 {
+  position: absolute;
+  left: 40px;
+}
+.image {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+.number {
+  padding-left: 10%;
+  display: none;
+}
+@media screen and (max-width: 808px) {
+  .collections-box {
+    display: none;
+  }
+  .collections-box1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .collections-text {
+    gap: clamp(1px, 3vw, 10px);
+
+    font-size: clamp(1px, 5vw, 25px);
+  }
+  .collections-smallText {
+    font-size: clamp(1px, 3vw, 10.5px);
+  }
+}

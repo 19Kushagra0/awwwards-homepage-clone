@@ -1,0 +1,10 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+  font-family: "Inter Tight";
+}
+body {
+  background-color: #f8f8f8;
+}
