@@ -16,7 +16,9 @@ export default function ColorPalette() {
             <div className="paletteTopLeft">
               <span className="hex">HEX</span> #EE4137
             </div>
-            <div className="paletteDownRight"></div>
+            <span class="paletteDownRight material-symbols-outlined">
+              search
+            </span>
           </div>
           <div className="paletteDown">Aa</div>
         </div>

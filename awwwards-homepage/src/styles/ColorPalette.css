@@ -79,7 +79,14 @@
 .paletteDownRight {
   width: 20px;
   height: 20px;
-  background-color: purple;
+  /* background-color: purple; */
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
 }
 .paletteDown {
   font-size: clamp(75px, 48.5915492958px + 5.2816901408vw, 150px);
