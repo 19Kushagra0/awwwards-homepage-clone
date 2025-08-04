@@ -1,0 +1,126 @@
+.footer {
+  width: 100%;
+  /* height: 100vh; */
+
+  padding-left: 5%;
+  padding-right: 5%;
+
+  background-color: #f8f8f8;
+
+  padding-bottom: 120px;
+
+  /* background-color: red; */
+}
+.headerTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; /* or 800 for bolder */
+  font-size: 25px;
+  letter-spacing: -1px;
+
+  background-color: #e9e9e9;
+
+  padding-right: 3%;
+}
+.footerTitle {
+  background-color: #f8f8f8;
+}
+.footerTitle {
+  padding-top: clamp(200px, 20vw, 300px);
+  padding-bottom: 50px;
+}
+.footerContainers1,
+.footerContainers2 {
+  width: 100%;
+  /* background-color: rebeccapurple; */
+
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+}
+.footerContainers1 {
+  margin-bottom: 40px;
+}
+.footerContainers2 {
+  display: none;
+  height: 200px;
+  margin-bottom: 40px;
+}
+.footerContainer {
+  width: 300px;
+  height: 100px;
+  /* background-color: blue; */
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+.footerEnd {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 300;
+  letter-spacing: normal;
+
+  padding-top: 50px;
+
+  border-top: 3px dotted #aaa;
+
+  gap: 20px;
+}
+.footerEndLeft {
+  display: flex;
+  flex-direction: row;
+
+  gap: 20px;
+
+  /* background-color: rebeccapurple; */
+}
+.footerEndRight {
+  display: flex;
+  flex-direction: row;
+
+  gap: 20px;
+}
+.fotterBoldText {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .footerContainers1 {
+    display: none;
+  }
+  .footerContainers2 {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footerEnd {
+    flex-direction: column;
+
+    line-height: 28px;
+  }
+  .footerEndLeft {
+    flex-wrap: wrap;
+    line-height: 10px;
+  }
+  .footerEndRight {
+    flex-wrap: wrap;
+    line-height: 10px;
+  }
+  /* .footerContainers2 {
+    margin-bottom: 50px;
+  } */
+}

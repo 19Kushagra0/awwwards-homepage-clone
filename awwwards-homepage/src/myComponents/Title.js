@@ -9,7 +9,12 @@ export default function Title() {
       </div>
       <div className="siteName">DAYDREAM PLAYER</div>
       <div className="siteCreaterName">
-        <div className="createrProfileIcon"></div>
+        <img
+          className="createrProfileIcon"
+          src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/2087544/6834cf2ee2ed4809767058.png"
+          alt=""
+        />
+
         <span className="CreaterName">Bukvity Lorisz</span>
       </div>
       <div className="sitePhotoOuterContainer">

@@ -12,9 +12,9 @@ export default function Toolbar() {
         </div>
       </div>
       <div className="toolbarIcons">
-        <div className="toolbarIcon"></div>
-        <div className="toolbarIcon"></div>
-        <div className="toolbarIcon"></div>
+        <span class="toolbarIcon material-symbols-outlined">bookmark</span>
+        <span class="toolbarIcon material-symbols-outlined">share</span>
+        <span class="toolbarIcon material-symbols-outlined">open_in_new</span>
       </div>
     </div>
   );

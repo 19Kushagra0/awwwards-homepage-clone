@@ -10,11 +10,11 @@
   color: #222222;
 
   padding-top: 77px;
-  padding-bottom: 100px;
+  padding-bottom: 5vw;
 }
 .elementsText {
   width: 100%;
-  background-color: aqua;
+  /* background-color: aqua; */
 
   font-size: 14px;
   line-height: 28px;
@@ -23,7 +23,7 @@
 }
 .highlights {
   width: 100%;
-  background-color: chocolate;
+  /* background-color: chocolate; */
 
   font-size: 43.5099px;
   line-height: 52.2118px;
@@ -37,7 +37,7 @@
 
   width: 100%;
 
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
 
   display: flex;
   flex-direction: row;
@@ -47,7 +47,7 @@
   flex-wrap: wrap;
 }
 .elementBox {
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
   border-radius: 14px;
   flex: 1;
   width: 100%;
@@ -81,9 +81,9 @@
 .elementBoxBottom {
   width: 100%;
   height: 10%;
-  background-color: plum;
+  /* background-color: plum; */
 
-  font-size: 20px;
+  font-size: clamp(14px, 3vw, 20px);
   line-height: 28px;
   font-weight: 300px;
   letter-spacing: normal;
@@ -92,6 +92,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: start;
+
+  font-weight: 600;
 
   gap: 10px;
 }
@@ -103,6 +105,7 @@
 }
 .underline {
   text-decoration: underline;
+  text-underline-offset: 7px;
 }
 
 @media (max-width: 1285px) {

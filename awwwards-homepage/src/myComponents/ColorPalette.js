@@ -6,7 +6,9 @@ export default function ColorPalette() {
     <div className="colorPalette">
       <h2 className="colorPalateTitle">Color Palatte</h2>
       <p className="colorPalateDescription">
-        This website uses a color <br /> palette of 1 colors
+        This website uses a color <br /> palette of
+        <span className="colorPalateDescriptionBold"> 1 </span>
+        colors
       </p>
       <div className="paletteContainer">
         <div className="palette">

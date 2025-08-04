@@ -11,7 +11,23 @@
 
   padding: 15px 4%;
 
-  gap: 10px;
+  gap: 20px;
+}
+.hambergerContainer {
+}
+.hamberger {
+  width: 20px;
+  height: 20px;
+  /* background-color: blue; */
+
+  display: none;
+
+  fill: #222222;
+
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
 }
 .headerTitle {
   font-family: "Montserrat", sans-serif;
@@ -28,7 +44,7 @@
   display: flex;
   flex-direction: row;
 
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 
   gap: 20px;
 }
@@ -43,17 +59,21 @@
   gap: 5px;
 
   border: 0px;
-  background-color: aquamarine;
+  background-color: #e9e9e9;
 
   padding: 5px;
-
-  font-size: 13px;
-
-  font-weight: 50;
+}
+.headerButton {
+  color: #222222;
+  font-family: "Inter Tight";
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: normal;
 }
 .headerProfileButton {
   border-radius: 100px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   padding: 0px;
 }
 .headerButton2 {
@@ -62,29 +82,75 @@
   background-color: black;
 }
 .headerIcon {
-  width: 10px;
-  height: 10px;
-  background-color: red;
+  width: 11px;
+  height: 11px;
+  /* background-color: red; */
 
-  border-radius: 50px;
+  border-radius: 100px;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  fill: #222222;
+
+  font-size: 20px;
 }
 .newTag {
+  width: fit-content;
+  height: fit-content;
   background-color: black;
-  color: white;
+  color: #f8f8f8;
 
-  border-radius: 5px;
-  padding: 5px;
+  /* border-radius: 5px; */
 
+  font-weight: 500;
   font-size: 10px;
+  line-height: 17px;
+
+  border-radius: 3px;
+
+  padding: 0.5px 4px;
+}
+.inputContainer {
+  width: 100%;
+}
+.inputBox {
+  width: 100%;
+
+  position: relative;
+}
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  /* background-color: red; */
+
+  position: absolute;
+
+  color: dimgray;
+
+  top: 7px;
+  left: 10px;
+
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .headerInput {
   width: 100%;
   max-width: 630px;
   padding: 10px;
+  padding-left: 40px;
   border-radius: 10px;
 
   border: 0px;
   background-color: #dedede;
+
+  color: #222222;
 }
 .headerProfileicon {
   width: 30px;
@@ -95,7 +161,7 @@
 }
 .headerProButton,
 .headerSubmitButton {
-  background-color: black;
+  background-color: #222222;
   color: white;
   border-radius: 10px;
   padding: 10px 15px;
@@ -105,7 +171,32 @@
   white-space: nowrap;
 }
 .headerSubmitButton {
-  background-color: white;
+  background-color: #e9e9e9;
   color: black;
   border: 1px solid black;
+}
+@media screen and (max-width: 1279px) {
+  .headerButtons1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .headerProfileButton {
+    display: none;
+  }
+  .headerProButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  .hamberger {
+    display: flex;
+  }
+}
+@media screen and (max-width: 779px) {
+  .header {
+    position: fixed;
+    top: 0px;
+  }
 }

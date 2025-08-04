@@ -14,7 +14,7 @@
 }
 .boxScore {
   height: 100%;
-  background-color: rebeccapurple;
+  /* background-color: rebeccapurple; */
 }
 .boxScoreTop,
 .boxScoreBottom {
@@ -35,6 +35,8 @@
 
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+
+  border-bottom: 0px;
 }
 
 .toolbarFont1 {
@@ -44,9 +46,9 @@
   letter-spacing: normal;
 }
 .toolbarFont2 {
-  font-size: 15px;
+  font-size: 13px;
   line-height: 15px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: normal;
 }
 
@@ -55,13 +57,13 @@
 
   padding: 12px;
 
-  gap: 10px;
+  gap: 5px;
 
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 .toolbarIcons {
-  background-color: pink;
+  /* background-color: pink; */
   display: flex;
   flex-direction: row;
 
@@ -71,7 +73,15 @@
   gap: 35px;
 }
 .toolbarIcon {
-  width: 20px;
-  height: 20px;
-  background-color: red;
+  width: 25px;
+  height: 25px;
+  /* background-color: red; */
+  fill: #222222;
+
+  font-size: 30px;
+}
+@media screen and (max-width: 779px) {
+  .toolbar {
+    padding-top: 100px;
+  }
 }

@@ -5,13 +5,13 @@
   padding-left: 4%;
   padding-right: 4%;
 
-  padding-top: 92px;
+  padding-top: 80px;
 }
 .colorPalateTitle {
   width: 100%;
   font-size: 14px;
   line-height: 28px;
-  font-weight: 500;
+  font-weight: 450;
   letter-spacing: normal;
 
   padding: 22px 0px;
@@ -20,8 +20,7 @@
 
   border: 0px;
 
-  border-bottom: 1px solid black;
-
+  border-bottom: 3px dotted #aaa;
   border-style: dotted;
 }
 .colorPalateDescription {
@@ -31,6 +30,9 @@
   letter-spacing: normal;
 
   padding-top: 48px;
+}
+.colorPalateDescriptionBold {
+  font-weight: 600;
 }
 .paletteContainer {
   width: 100%;
@@ -45,7 +47,7 @@
 .palette {
   background-color: #ee4137;
 
-  border-radius: 20px;
+  border-radius: 15px;
 
   display: flex;
   flex-direction: column;
@@ -55,7 +57,7 @@
 
   color: white;
 
-  gap: 450px;
+  gap: clamp(300px, 35vw, 450px);
 }
 .paletteTop {
   width: 100%;
@@ -63,14 +65,13 @@
   display: flex;
   flex-direction: row;
 
-  font-size: 14px;
   font-size: 25px;
   font-weight: 300;
   letter-spacing: normal;
 
   align-items: center;
 
-  gap: 200px;
+  gap: clamp(100px, 15vw, 200px);
 }
 
 .paletteTopLeft {
@@ -81,7 +82,7 @@
   background-color: purple;
 }
 .paletteDown {
-  font-size: 130px;
+  font-size: clamp(75px, 48.5915492958px + 5.2816901408vw, 150px);
   line-height: 78px;
   font-weight: 400;
   letter-spacing: normal;
