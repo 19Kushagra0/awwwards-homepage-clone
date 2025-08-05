@@ -12,6 +12,8 @@
   padding: 15px 4%;
 
   gap: 20px;
+
+  z-index: 2;
 }
 .hambergerContainer {
 }
