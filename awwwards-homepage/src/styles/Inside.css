@@ -48,6 +48,8 @@
   background-color: red;
 
   border-radius: 15px;
+
+  cursor: pointer;
 }
 .insideBoxText {
   width: 100%;

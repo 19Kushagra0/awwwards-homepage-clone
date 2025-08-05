@@ -30,8 +30,11 @@
 
   align-items: center;
   justify-content: center;
+
+  cursor: pointer;
 }
 .headerTitle {
+  width: fit-content;
   font-family: "Montserrat", sans-serif;
   font-weight: 700; /* or 800 for bolder */
   font-size: 25px;
@@ -40,6 +43,9 @@
   background-color: red;
 
   padding-right: 3%;
+}
+.point {
+  cursor: pointer;
 }
 .headerButtons1,
 .headerButtons2 {
@@ -72,6 +78,8 @@
   line-height: 28px;
   font-weight: 500;
   letter-spacing: normal;
+
+  cursor: pointer;
 }
 .headerProfileButton {
   border-radius: 100px;
@@ -160,6 +168,8 @@
   background-color: black;
 
   border-radius: 50px;
+
+  cursor: pointer;
 }
 .headerProButton,
 .headerSubmitButton {
@@ -171,11 +181,17 @@
   font-size: 15px;
 
   white-space: nowrap;
+
+  cursor: pointer;
 }
 .headerSubmitButton {
   background-color: #e9e9e9;
   color: black;
   border: 1px solid black;
+}
+.headerSubmitButton:hover {
+  background-color: #222222;
+  color: #e9e9e9;
 }
 @media screen and (max-width: 1279px) {
   .headerButtons1 {

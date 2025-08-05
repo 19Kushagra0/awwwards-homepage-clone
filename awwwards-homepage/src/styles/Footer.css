@@ -97,7 +97,9 @@
 .fotterBoldText {
   font-weight: 600;
 }
-
+.point {
+  cursor: pointer;
+}
 @media screen and (max-width: 1024px) {
   .footerContainers1 {
     display: none;

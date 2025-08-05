@@ -43,6 +43,8 @@
   background-color: blue;
 
   border-radius: 20px;
+
+  cursor: pointer;
 }
 .small {
   font-weight: 300;
@@ -64,6 +66,8 @@
   fill: #222222;
 
   font-size: 27px;
+
+  cursor: pointer;
 }
 @media screen and (max-width: 779px) {
   .scrollheader {
