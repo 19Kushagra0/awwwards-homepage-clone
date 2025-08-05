@@ -86,6 +86,7 @@
 
   align-items: center;
   justify-content: center;
+
 }
 .paletteDown {
   font-size: clamp(75px, 48.5915492958px + 5.2816901408vw, 150px);
