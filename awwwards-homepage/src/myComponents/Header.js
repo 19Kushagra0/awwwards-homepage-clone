@@ -8,7 +8,9 @@ export default function Header() {
         <div className="hambergerContainer">
           <span class="hamberger material-symbols-outlined">menu</span>
         </div>
-        <div className="headerTitle">W.</div>
+        <div className="headerTitle">
+          <span className="point">W.</span>
+        </div>
         <div className="headerButtons1">
           <button className="headerButton">
             Explore

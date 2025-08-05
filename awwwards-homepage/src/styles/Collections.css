@@ -50,6 +50,8 @@
   background-color: paleturquoise;
 
   border-radius: 10px;
+
+  cursor: pointer;
 }
 .collections-text {
   padding-top: 20px;
@@ -110,6 +112,8 @@
   width: 30px;
   height: 30px;
   border-radius: 100px;
+
+  cursor: pointer;
 }
 .number {
   padding-left: 10%;

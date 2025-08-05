@@ -18,9 +18,9 @@ export default function Collections() {
             alt=""
           />
           <div className="collections-text">
-            <span>Transitions</span>
-            <span className="collections-smallText">followed by</span>
-            <div className="imagesContainers">
+            <span className="">Transitions</span>
+            <span className=" collections-smallText">followed by</span>
+            <div className=" imagesContainers">
               <div className="imagesContainer1">
                 <img
                   className="image"
@@ -54,9 +54,9 @@ export default function Collections() {
           />
 
           <div className="collections-text">
-            <span>WebGL</span>
+            <span className="">WebGL</span>
             <span className="collections-smallText">followed by</span>
-            <div className="imagesContainers">
+            <div className="imagesContainers ">
               <div className="imagesContainer1">
                 <img
                   className="image"
@@ -89,9 +89,9 @@ export default function Collections() {
             alt=""
           />
           <div className="collections-text">
-            <span>Transitions</span>
+            <span className="">Transitions</span>
             <span className="collections-smallText">followed by</span>
-            <div className="imagesContainers">
+            <div className=" imagesContainers">
               <div className="imagesContainer1">
                 <img
                   className="image"

@@ -60,8 +60,11 @@
   background-color: black;
 
   border-radius: 100px;
+
+  cursor: pointer;
 }
 .CreaterName {
+  cursor: pointer;
 }
 .siteCreaterName {
   display: flex;
