@@ -4,61 +4,61 @@ import "../styles/Footer.css";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="headerTitle footerTitle">W.</div>
+      <div className="headerTitle footerTitle curser">W.</div>
       <div className="footerContainers1">
         <div className="footerContainer">
-          <span>Websites</span>
-          <span>Collections</span>
-          <span>Elements</span>
+          <span className="curser">Websites</span>
+          <span className="curser">Collections</span>
+          <span className="curser">Elements</span>
         </div>
         <div className="footerContainer">
-          <span>Academy</span>
-          <span>Jobs</span>
-          <span>Market</span>
+          <span className="curser">Academy</span>
+          <span className="curser">Jobs</span>
+          <span className="curser">Market</span>
         </div>
         <div className="footerContainer">
-          <span>Directory</span>
-          <span>Conferences</span>
+          <span className="curser">Directory</span>
+          <span className="curser">Conferences</span>
         </div>
         <div className="footerContainer">
-          <span>FAQs</span>
-          <span>About Us</span>
-          <span>Contact Us</span>
+          <span className="curser">FAQs</span>
+          <span className="curser">About Us</span>
+          <span className="curser">Contact Us</span>
         </div>
       </div>
       <div className="footerContainers2">
         <div className="footerContainer">
-          <span>Websites</span>
-          <span>Collections</span>
-          <span>Elements</span>
-          <span>Directory</span>
-          <span>Conferences</span>
+          <span className="curser">Websites</span>
+          <span className="curser">Collections</span>
+          <span className="curser">Elements</span>
+          <span className="curser">Directory</span>
+          <span className="curser">Conferences</span>
         </div>
         <div className="footerContainer">
-          <span>Academy</span>
-          <span>Jobs</span>
-          <span>Market</span>
-          <span>FAQs</span>
-          <span>About Us</span>
-          <span>Contact Us</span>
+          <span className="curser">Academy</span>
+          <span className="curser">Jobs</span>
+          <span className="curser">Market</span>
+          <span className="curser">FAQs</span>
+          <span className="curser">About Us</span>
+          <span className="curser">Contact Us</span>
         </div>
       </div>
 
       <div className="footerEnd">
         <div className="footerEndLeft">
-          <span>Cookies Policy</span>
-          <span>Legal Terms</span>
-          <span>Privacy Policy</span>
+          <span className="curser">Cookies Policy</span>
+          <span className="curser">Legal Terms</span>
+          <span className="curser">Privacy Policy</span>
         </div>
         <div className="footerEndRight">
-          <span className="fotterBoldText">Connect:</span>
-          <span>Instagram</span>
-          <span>Linkedln</span>
-          <span>Twitter</span>
-          <span>Facebook</span>
-          <span>Youtube</span>
-          <span>TikTok</span>
-          <span>Pinterest</span>
+          <span className="fotterBoldText ">Connect:</span>
+          <span className="curser">Instagram</span>
+          <span className="curser">Linkedln</span>
+          <span className="curser">Twitter</span>
+          <span className="curser">Facebook</span>
+          <span className="curser">Youtube</span>
+          <span className="curser">TikTok</span>
+          <span className="curser">Pinterest</span>
         </div>
       </div>
     </div>
