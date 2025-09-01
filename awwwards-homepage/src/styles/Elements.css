@@ -86,7 +86,7 @@
   /* background-color: plum; */
 
   font-size: clamp(14px, 3vw, 20px);
-  line-height: 28px;
+  /* line-height: 28px; */
   font-weight: 300px;
   letter-spacing: normal;
 
@@ -98,6 +98,7 @@
   font-weight: 600;
 
   gap: 10px;
+  padding-top: 10px;
 }
 .smallValue {
   font-size: 10.5px;
