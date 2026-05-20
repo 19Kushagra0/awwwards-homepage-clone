@@ -2,6 +2,21 @@ import React from "react";
 import "../styles/Elements.css";
 
 export default function Elements() {
+  const handleMouseEnter = (e) => {
+    const playPromise = e.target.play();
+    if (playPromise !== undefined) {
+      playPromise.catch((error) => {
+        if (error.name !== "AbortError") {
+          console.error("Playback error:", error);
+        }
+      });
+    }
+  };
+
+  const handleMouseLeave = (e) => {
+    e.target.pause();
+  };
+
   return (
     <div className="elements">
       <div className="elementsText">Elements</div>
@@ -19,8 +34,8 @@ export default function Elements() {
               muted
               loop
               playsInline
-              onMouseEnter={(e) => e.target.play()}
-              onMouseLeave={(e) => e.target.pause()}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             ></video>
           </div>
           <div className="elementBoxBottom">
@@ -37,8 +52,8 @@ export default function Elements() {
               muted
               loop
               playsInline
-              onMouseEnter={(e) => e.target.play()}
-              onMouseLeave={(e) => e.target.pause()}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             ></video>
           </div>
           <div className="elementBoxBottom">
@@ -55,8 +70,8 @@ export default function Elements() {
               muted
               loop
               playsInline
-              onMouseEnter={(e) => e.target.play()}
-              onMouseLeave={(e) => e.target.pause()}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             ></video>
           </div>
           <div className="elementBoxBottom">
@@ -73,8 +88,8 @@ export default function Elements() {
               muted
               loop
               playsInline
-              onMouseEnter={(e) => e.target.play()}
-              onMouseLeave={(e) => e.target.pause()}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             ></video>
           </div>
           <div className="elementBoxBottom">
@@ -91,8 +106,8 @@ export default function Elements() {
               muted
               loop
               playsInline
-              onMouseEnter={(e) => e.target.play()}
-              onMouseLeave={(e) => e.target.pause()}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             ></video>
           </div>
           <div className="elementBoxBottom">
@@ -109,8 +124,8 @@ export default function Elements() {
               muted
               loop
               playsInline
-              onMouseEnter={(e) => e.target.play()}
-              onMouseLeave={(e) => e.target.pause()}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             ></video>
           </div>
           <div className="elementBoxBottom">

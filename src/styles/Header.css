@@ -1,0 +1,397 @@
+.header {
+  width: 100%;
+  background-color: #e9e9e9;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 15px 4%;
+
+  gap: 20px;
+
+  z-index: 2;
+}
+.hambergerContainer {
+}
+.hamberger {
+  width: 20px;
+  height: 20px;
+  /* background-color: blue; */
+
+  display: none;
+
+  fill: #222222;
+
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+.headerTitle {
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; /* or 800 for bolder */
+  font-size: 25px;
+  letter-spacing: -1px;
+
+  background-color: red;
+
+  padding-right: 3%;
+}
+.point {
+  cursor: pointer;
+}
+.headerButtons1,
+.headerButtons2 {
+  display: flex;
+  flex-direction: row;
+
+  /* background-color: rebeccapurple; */
+
+  gap: 20px;
+}
+.headerButton,
+.headerProfileButton,
+.headerProButton,
+.headerSubmitButton {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 5px;
+
+  border: 0px;
+  background-color: #e9e9e9;
+
+  padding: 5px;
+}
+.headerButton {
+  color: #222222;
+  font-family: "Inter Tight";
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: normal;
+
+  cursor: pointer;
+}
+.headerProfileButton {
+  border-radius: 100px;
+  /* background-color: aquamarine; */
+  padding: 0px;
+}
+.headerButton2 {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: black;
+}
+.headerIcon {
+  width: 11px;
+  height: 11px;
+  /* background-color: red; */
+
+  border-radius: 100px;
+
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: center;
+
+  fill: #222222;
+
+  font-size: 20px;
+}
+.newTag {
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+  color: #f8f8f8;
+
+  /* border-radius: 5px; */
+
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 17px;
+
+  border-radius: 3px;
+
+  padding: 0.5px 4px;
+}
+.inputContainer {
+  width: 100%;
+}
+.inputBox {
+  width: 100%;
+
+  position: relative;
+}
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  /* background-color: red; */
+
+  position: absolute;
+
+  color: dimgray;
+
+  top: 7px;
+  left: 10px;
+
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerInput {
+  width: 100%;
+  max-width: 630px;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 10px;
+
+  border: 0px;
+  background-color: #dedede;
+
+  color: #222222;
+}
+.headerProfileicon {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+.headerProButton,
+.headerSubmitButton {
+  background-color: #222222;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-weight: 500;
+  font-size: 15px;
+
+  white-space: nowrap;
+
+  cursor: pointer;
+}
+.headerSubmitButton {
+  background-color: #e9e9e9;
+  color: black;
+  border: 1px solid black;
+}
+.headerSubmitButton:hover {
+  background-color: #222222;
+  color: #e9e9e9;
+}
+@media screen and (max-width: 1279px) {
+  .headerButtons1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1022px) {
+  .headerProfileButton {
+    display: none;
+  }
+  .headerProButton {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1269px) {
+  .hamberger {
+    display: flex;
+  }
+}
+@media screen and (max-width: 779px) {
+  .header {
+    position: fixed;
+    top: 0px;
+  }
+}
+
+/* ==========================================================================
+   Awwwards Navigation Drawer Styles
+   ========================================================================== */
+
+.headerWrapper {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.header {
+  position: relative;
+  z-index: 101; /* sit above drawer */
+}
+
+/* Drawer Menu Main Layout */
+.drawerMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #dcdcdc;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              opacity 0.25s ease;
+  z-index: 99;
+}
+
+.drawerMenu.open {
+  max-height: 90vh; /* large viewport height limits */
+  opacity: 1;
+  overflow-y: auto;
+}
+
+.drawerContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Drawer Individual Item */
+.drawerItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 5%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dedede;
+  
+  color: #222222;
+  font-family: "Inter Tight", "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, padding-left 0.2s ease, color 0.15s ease;
+}
+
+.drawerItem:hover {
+  background-color: #f7f7f7;
+  padding-left: 5.5%;
+  color: #000000;
+}
+
+/* Active Highlight Item (Explore) */
+.drawerItem.active {
+  background-color: #e9e9e9;
+  font-weight: 700;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.drawerItem.active:hover {
+  background-color: #e2e2e2;
+}
+
+/* Secondary Items (Directory, Academy, Jobs, Market) */
+.drawerItem.secondary {
+  background-color: #e9e9e9;
+  border-bottom: 1px solid #dedede;
+  font-weight: 550;
+  color: #333333;
+}
+
+.drawerItem.secondary:hover {
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+/* Academy inline badge styling */
+.drawerItem.inlineBadge {
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.drawerItem.inlineBadge .newTag {
+  margin-top: 1px;
+}
+
+/* Collapsible and Rotating Icon */
+.drawerItem.collapsible {
+  position: relative;
+}
+
+.chevronIcon {
+  font-size: 20px;
+  color: #777777;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), color 0.2s ease;
+}
+
+.drawerItem.collapsible.expanded .chevronIcon {
+  transform: rotate(180deg);
+  color: #000000;
+}
+
+/* Accordion Collapsed Menu */
+.accordionSubMenu {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  background-color: #fafafa;
+  transition: max-height 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+              opacity 0.2s ease;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.accordionSubMenu.show {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.subItem {
+  padding: 13px 8%;
+  font-family: "Inter Tight", "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555555;
+  cursor: pointer;
+  border-bottom: 1px solid #eaeaea;
+  transition: background-color 0.2s ease, padding-left 0.2s ease, color 0.15s ease;
+}
+
+.subItem:last-child {
+  border-bottom: none;
+}
+
+.subItem:hover {
+  background-color: #f2f2f2;
+  padding-left: 9%;
+  color: #000000;
+}
+
+/* Drawer positioning on small screens */
+@media screen and (max-width: 779px) {
+  .headerWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .drawerMenu {
+    position: fixed;
+    top: 60px; /* height of header on mobile */
+    height: calc(100vh - 60px);
+    max-height: calc(100vh - 60px);
+    overflow-y: auto;
+  }
+}
+
