@@ -11,7 +11,7 @@ export default function Title() {
       <div className="siteCreaterName">
         <img
           className="createrProfileIcon"
-          src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/2087544/6834cf2ee2ed4809767058.png"
+          src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
           alt=""
         />
 

@@ -24,7 +24,7 @@ export default function Scrollheader() {
           <span className="small">by</span>
           <img
             className="createrImage"
-            src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/avatar/2087544/6834cf2ee2ed4809767058.png"
+            src="https://assets.awwwards.com/awards/media/cache/thumb_user_70/default/user5.jpg"
             alt="Creator"
           />
           <div className="underline createrName">Bukvity Lorisz</div>
